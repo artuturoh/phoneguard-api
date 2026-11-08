@@ -1,0 +1,38 @@
+{
+  "name": "phoneguard-api",
+  "version": "1.0.0",
+  "description": "High-performance in-memory international phone validation, E.164 formatting, line type detection, timezone lookup and SMS fraud recommendation microservice for RapidAPI.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "phone-validation",
+    "e164",
+    "rapidapi",
+    "fraud-prevention",
+    "sms-verification",
+    "timezone",
+    "voip-detection",
+    "microservice"
+  ],
+  "author": "PhoneGuard Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "countries-and-timezones": "^3.7.3",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "libphonenumber-js": "^1.11.17",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
